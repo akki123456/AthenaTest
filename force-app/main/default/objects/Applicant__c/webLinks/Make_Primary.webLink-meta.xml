@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Make_Primary</fullName>
+    <availability>online</availability>
+    <description>Use this button to change the primary relationship post Submission.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Make Primary</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/flow/AssignApplicantAsPrimary?applicationId={!CASESAFEID(Applicant__c.ApplicationId__c)}&amp;recordId={!CASESAFEID(Applicant__c.Id)}&amp;retUrl={!Applicant__c.Id}</url>
+</WebLink>

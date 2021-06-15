@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnlyOnePrimaryApplicantAfterSubmission</fullName>
+    <active>true</active>
+    <description>There should be one and only one applicant post submission status (any status other than Initiated).</description>
+    <errorConditionFormula>TEXT(Status__c) &lt;&gt; &apos;Initiated&apos; &amp;&amp;  SYS_NumberOfPrimaryApplicants__c &lt;&gt; 1</errorConditionFormula>
+    <errorMessage>There should be one and only one Primary applicant prior to Submission of the application.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GrossIncome__c</fullName>
+    <description>Gross Income. This can be calculated automatically based on business needs.</description>
+    <externalId>false</externalId>
+    <label>Gross Income</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

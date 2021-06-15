@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ownership_cant_be_more_than_100</fullName>
+    <active>true</active>
+    <description>Ownership cant be more than 100</description>
+    <errorConditionFormula>ApplicationOwnership__c &gt; 1 || ApplicationOwnership__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>ApplicationOwnership__c</errorDisplayField>
+    <errorMessage>Ownership should be between 0 and 100</errorMessage>
+</ValidationRule>

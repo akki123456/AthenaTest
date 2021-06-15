@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SYS_TotalOwnership__c</fullName>
+    <description>Sum of all ownership percentage of applicants. It is a system field used to validate the ownership should be 100% when submitting the application.</description>
+    <externalId>false</externalId>
+    <label>Total Ownership</label>
+    <summarizedField>Applicant__c.ApplicationOwnership__c</summarizedField>
+    <summaryForeignKey>Applicant__c.Application__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
